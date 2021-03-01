@@ -5,9 +5,8 @@ import Button from '@material-ui/core/Button';
 const ButtonBasic = (props) => {
     return (
         // <button>{props.name}</button>
-        <Button variant="contained" color="primary">
-            {/* {props.name} */}
-            ypp
+        <Button variant="outlined" color="primary">
+            {props.name}
       </Button>
     )
 }
