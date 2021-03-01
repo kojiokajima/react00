@@ -6,7 +6,8 @@ const ButtonBasic = (props) => {
     return (
         // <button>{props.name}</button>
         <Button variant="outlined" color="primary">
-            {props.name}
+            {/* {props.name} */}
+            Hey yo
       </Button>
     )
 }
