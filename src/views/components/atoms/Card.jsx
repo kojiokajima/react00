@@ -1,5 +1,5 @@
 import React from 'react'
-import { ButtonBasic } from "./index";
+import { ButtonBasic } from "../index";
 
 const Card = (props) => {
     return (
