@@ -5,11 +5,8 @@ import { Switch, Route, BrowserRouter, Link } from 'react-router-dom';
 // import { makeStyles } from '@material-ui/core/styles'
 import Logo from '../../../assets/img/logo_square.png'
 import {About, Contact, History, Home, Work} from '../index'
-import { motion,  AnimatePresence } from 'framer-motion'
 
-// const useStyles = makeStyles(() => {
 
-// })
 
 const Header = () => {
     return (
@@ -39,12 +36,11 @@ const Header = () => {
             {/* </motion.div> */}
 
             <Switch>
-                <Route path={'/about'} component={About} />
-                <Route path={'/contact'} component={Contact} />
-                <Route path={'/history'} component={History} />
-                <Route path={'/'} component={Home} />
-                <Route path={'/work'} component={Work} />
-                {/* <Route path='/about'><About /></Route> */}
+                <Route exact path={'/about'} component={About} />
+                <Route exact path={'/contact'} component={Contact} />
+                <Route exact path={'/history'} component={History} />
+                <Route exact path={'/'} component={Home} />
+                <Route exact path={'/work'} component={Work} />
             </Switch>
         </BrowserRouter>
         

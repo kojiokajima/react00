@@ -1,4 +1,4 @@
-import React from 'eract'
+import React from 'react'
 
 const Work = () => {
     return (
