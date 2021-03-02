@@ -1,5 +1,18 @@
 body {
-    // background-color: blue;
+    margin: 0;
+    padding: 0;
 }
 
-@import "header"
+a {
+    &:link,
+    &:active,
+    &:visited {
+        text-decoration: none;
+        color: #444;
+        transition: all 0.2s;
+    }
+}
+
+
+@import "header";
+@import "home";
