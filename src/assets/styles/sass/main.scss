@@ -1,5 +1,21 @@
-body {
-    // background-color: blue;
+body, * {
+    margin: 0;
+    padding: 0;
 }
 
-@import "header"
+a {
+    &:link,
+    &:active,
+    &:visited {
+        text-decoration: none;
+        color: #444;
+        transition: all 0.2s;
+    }
+}
+
+@import "hero";
+@import "header";
+
+@import "home";
+@import "about";
+@import "work";
