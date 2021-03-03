@@ -23,23 +23,19 @@ const AboutContent = (props) => {
     }
 
     return (
-            <div className="about-content">
-                <div className="about-content-main">
-                    <div className="about-content-main-title" style={{backgroundColor: bgColor}}>
-                        <p>{props.title}</p>
-                    </div>
-
-                    <div className="about-content-main-description" style={{
-                        backgroundImage: "url(" + bgUrl.default + ")"
-                    }}>
-                    </div>
-                </div>
-
-                <div className="about-content-sub">
-                    <p>{props.text}</p>
-                    <ButtonBasic name={"Learn More"} />
-                </div>
+        <div className="about-content">
+            <div className="about-content-title" style={{backgroundColor: bgColor}}>
+                <p>{props.title}</p>
             </div>
+
+            <div className="about-content-description" style={{
+                backgroundImage: "url(" + bgUrl.default + ")"
+            }}>
+                <p>{props.text}</p>
+                <ButtonBasic name={"Learn More"} />
+            </div>
+
+        </div>
     )
 }
 

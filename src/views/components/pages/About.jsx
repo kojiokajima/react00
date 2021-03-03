@@ -1,7 +1,7 @@
 import React from "react";
 // import { makeStyles } from "@material-ui/core/styles";
 import Grow from "@material-ui/core/Grow";
-import { AboutContent } from "../index";
+import { AboutContent, Hero } from "../index";
 
 const About = () => {
   const images = [
@@ -12,7 +12,7 @@ const About = () => {
   return (
     <div className="about">
 
-      <div className="about-top">
+      {/* <div className="about-top">
         <div className="about-top-bg"></div>
         <div className="about-top-text">
           <Grow in={true} style={{ transformOrigin: "50% 50%" }} timeout={1500}>
@@ -22,26 +22,23 @@ const About = () => {
             <p>Scroll to learn more</p>
           </Grow>
         </div>
-      </div>
+      </div> */}
+      <Hero
+        text={"This is who I am"}
+      />
 
       <AboutContent
         title={"Student"}
-        // url={'src/assets/img/appetizer1.jpg'}
-        // url={'../../../assets/img/appetizer1.jpg'}
         url={require('../../../assets/img/appetizer1.jpg')}
-        // url={images[0]}
-        bgColor={"red"}
+        bgColor={"#ad875e"}
         text={"Cornerstone International Commitny Collage of Canada"}
       />
-      
+
       <AboutContent
         title={"Student"}
-        // url={'src/assets/img/appetizer1.jpg'}
-        // url={'../../../assets/img/appetizer1.jpg'}
         url={require('../../../assets/img/appetizer1.jpg')}
-        // url={images[0]}
-        bgColor={"red"}
-        text={"Cornerstone International Commitny Collage of Canada"}
+        bgColor={"#ad875e"}
+        text={"yo yo ooo yoyo oy oyo yo yyo upp pp p p ppp pp p pp"}
       />
     </div>
   );
