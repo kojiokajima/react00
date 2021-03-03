@@ -1,0 +1,25 @@
+import Rect from 'react'
+import { Card, Cards } from '../index'
+import defaultDataset from '../../../dataset'
+/*
+Cardには配列を渡すんだなぁ
+jsonファイル作ろうかなぁ
+*/
+
+const WorkContent = () => {
+    console.log(defaultDataset["drawing"])
+    return (
+        <div className="work-content">
+                <div className="work-content-title">
+                    <h1>Drawings</h1>
+                </div>
+                <div className="work-content-works">
+                    <Cards
+                        imageData={defaultDataset["drawing"]}
+                    />
+                </div>
+            </div>
+    )
+}
+
+export default WorkContent

@@ -17,7 +17,11 @@
             // height: 70vh;
             height: 40vw;
             color: #fff;
+            margin: 5% 0;
             
+            &:last-child {
+                margin-bottom: 0;
+            }
             &:nth-child(odd) {
                 flex-direction: row-reverse;
             }

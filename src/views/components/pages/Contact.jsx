@@ -1,8 +1,13 @@
 import React from 'react'
+import { Hero } from '../index'
 
 const Contact = () => {
     return (
-        <h1>Contact Page</h1>
+        <div className="Contact">
+            hohoho
+            {/* <Hero text={"This is where I am"} /> */}
+
+        </div>
     )
 }
 
