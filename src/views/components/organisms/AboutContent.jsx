@@ -15,7 +15,8 @@ import { ButtonBasic } from '..';
 const AboutContent = (props) => {
     // const classes = useStyles()
     const bgUrl = props.url
-    console.log(bgUrl.default)
+    // console.log(bgUrl)
+    // console.log(bgUrl.default)
     const bgColor = props.bgColor
 
     return (
@@ -28,7 +29,7 @@ const AboutContent = (props) => {
                 backgroundImage: "url(" + bgUrl.default + ")"
             }}>
                 <p>{props.text}</p>
-                <ButtonBasic name={"Learn More"} />
+                <ButtonBasic name={"Learn More"} bgColor={props.bgColor} />
             </div>
 
         </div>

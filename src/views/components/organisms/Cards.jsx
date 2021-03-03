@@ -11,26 +11,30 @@ import { CardItem } from '../index';
 ]
 みたいな感じ
  */
+const setPath = (props) => {
+
+}
 
 const Cards = (props) => {
     const imageData = props.imageData
-    console.log(imageData)
-    console.log(imageData[0][0])
-    console.log(imageData[0][1])
-    console.log(imageData[0][2])
-    // console.log(props.imageData[0])
-    // console.log(props.imageData[1])
-    // console.log(props.imageData[2])
+    const pathArr = []
+    for (let i = 1; i < imageData.length + 1; i++) {
+        const path = require(`../../../assets/img/work${i}.jpg`).default
+        // const path = require(`${imageData[i-1][1]}`).default
+        pathArr.push(path)
+    }
+
     return (
         <div className="cards">
             {imageData.map((value, index) => {
-                return <CardItem alt={imageData[index][0]} image={imageData[index][1]} title={imageData[index][2]} key={index.toString()}/>
+                return <CardItem
+                    alt={imageData[index][0]}
+                    image={pathArr[index]}
+                    // image={"yooo"}
+                    title={imageData[index][1]}
+                    key={index.toString()}
+                />
             })}
-            {/* <CardItem
-                alt={}
-                image={}
-                title={}
-            /> */}
         </div>
     )
 }
