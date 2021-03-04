@@ -1,5 +1,5 @@
 import React from 'react'
-import { Footer, Header} from './views/components/index'
+import { Header} from './views/components/index'
 
 // import './App.css';
 import './assets/styles/sass/main.scss'
