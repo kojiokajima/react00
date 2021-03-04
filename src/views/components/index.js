@@ -5,6 +5,7 @@ export {default as CardItem} from './molecules/CardItem'
 
 export {default as AboutContent} from './organisms/AboutContent'
 export {default as Cards} from './organisms/Cards'
+export {default as ContactContent} from './organisms/ContactContent'
 export {default as Footer} from './organisms/FooterSample'
 export {default as FooterSample} from './organisms/FooterSample'
 export {default as Header} from './organisms/Header'

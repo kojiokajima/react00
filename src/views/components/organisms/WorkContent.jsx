@@ -1,5 +1,5 @@
-import Rect from 'react'
-import { Card, Cards } from '../index'
+import React from 'react'
+import { Cards } from '../index'
 import defaultDataset from '../../../dataset'
 /*
 Cardには配列を渡すんだなぁ

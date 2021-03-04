@@ -4,8 +4,7 @@ import { Hero } from '../index'
 const History = () => {
     return (
         <div className="history">
-            looololo
-            {/* <Hero text={"This is who I was"} /> */}
+            <Hero text={"This is who I was"} />
 
         </div>
     )

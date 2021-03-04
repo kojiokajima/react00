@@ -15,27 +15,31 @@ const About = () => {
         url={require('../../../assets/img/appetizer1.jpg')}
         bgColor={"#415ed1"}
         text={"Strong passion to learn something new always make"}
-      />
+        isButtonExist={true}
+        />
 
       <AboutContent
         title={"Web Developer"}
         url={require('../../../assets/img/appetizer1.jpg')}
         bgColor={"#ad875e"}
         text={"yo yo ooo yoyo oy oyo yo yyo upp pp p p ppp pp p ppppp"}
-      />
+        isButtonExist={true}
+        />
 
       <AboutContent
         title={"Painter"}
         url={require('../../../assets/img/appetizer1.jpg')}
         bgColor={"#41d187"}
         text={"yo yo ooo yoyo oy oyo yo yyo upp pp p pppp pp p pp"}
-      />
+        isButtonExist={true}
+        />
 
       <AboutContent
         title={"Traveler"}
         url={require('../../../assets/img/appetizer1.jpg')}
         bgColor={"#d1be41"}
         text={"yo yo ooo yoyo oy oyo yo yyo upp pp p p ppp pp p pp"}
+        isButtonExist={true}
       />
     </div>
   );

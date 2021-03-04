@@ -18,6 +18,7 @@ const AboutContent = (props) => {
     // console.log(bgUrl)
     // console.log(bgUrl.default)
     const bgColor = props.bgColor
+    const isButtonExist = props.isButtonExist
 
     return (
         <div className="about-content">
@@ -29,7 +30,11 @@ const AboutContent = (props) => {
                 backgroundImage: "url(" + bgUrl.default + ")"
             }}>
                 <p>{props.text}</p>
-                <ButtonBasic name={"Learn More"} bgColor={props.bgColor} />
+                {isButtonExist ? (
+                    <ButtonBasic name={"Learn More"} bgColor={props.bgColor} />
+                ) : (
+                    <></>
+                )}
             </div>
 
         </div>

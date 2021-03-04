@@ -11,9 +11,6 @@ import { CardItem } from '../index';
 ]
 みたいな感じ
  */
-const setPath = (props) => {
-
-}
 
 const Cards = (props) => {
     const imageData = props.imageData

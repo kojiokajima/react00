@@ -10,7 +10,6 @@ const useStyles = makeStyles(() => ({
         "&:hover": {
             color: "#fff",
             backgroundColor: props.bgColor,
-            // backgroundColor: color,
         }
     })
 
@@ -18,8 +17,6 @@ const useStyles = makeStyles(() => ({
 
 const ButtonBasic = (props) => {
     const classes = useStyles(props)
-
-    const bgColor = props.bgColor
 
     return (
         <Button className={classes.button} variant="outlined">
