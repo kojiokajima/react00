@@ -2,7 +2,6 @@ import React from 'react'
 import { AboutContent, ContactForm } from '../index'
 import PersonIcon from '@material-ui/icons/Person';
 import { makeStyles } from '@material-ui/core';
-import { fontSize } from '@material-ui/system';
 
 const useStyles = makeStyles(() => ({
     AboutContent: {
@@ -24,7 +23,6 @@ const ContactContent = () => {
             return <span key={index}>{item}<br/></span>
         })
     }
-    console.log(renderedText())
 
     return (
         <div className="contact-content">
