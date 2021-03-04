@@ -17,11 +17,11 @@ const ContactContent = () => {
     const classes = useStyles()
     const infoText = `Name: Koji Okajima<br/>Email: okka01240110@gmail.com<br/>Phone: 236-677-2088`;
     const renderedText = () => {
-
         return infoText.split("<br/>").map((item, index) => {
             return <span key={index}>{item}<br/></span>
         })
     }
+    
 
     return (
         <div className="contact-content">
@@ -39,6 +39,8 @@ const ContactContent = () => {
                         text={renderedText()}
                         // text={infoText}
                         isButtonExist={true}
+                        isContact={true}
+
                     />
                     
                                         

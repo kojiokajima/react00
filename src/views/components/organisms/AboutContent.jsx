@@ -38,13 +38,17 @@ const AboutContent = (props) => {
                 )}
             </div>
 
-            <div className="form">
-                    <ContactForm
-                        open={open}
-                        handleClose={handleClose}
-                        handleOpen={handleOpen}
-                    />
-            </div>
+            {props.isContact ? (
+                <div className="form">
+                        <ContactForm
+                            open={open}
+                            handleClose={handleClose}
+                            handleOpen={handleOpen}
+                        />
+                </div>
+            ) : (
+                <></>
+            )}
 
         </div>
     )

@@ -1,7 +1,8 @@
 .hero {
     position: relative;
     width: 100vw;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
+    padding-top: 70px;
 
     &-bg {
         width: 100%;

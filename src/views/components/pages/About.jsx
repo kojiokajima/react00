@@ -17,6 +17,7 @@ const About = () => {
         bgColor={"#415ed1"}
         text={"Strong passion to learn something new always make"}
         isButtonExist={true}
+        isContact={false}
         />
 
       <AboutContent
@@ -26,6 +27,7 @@ const About = () => {
         bgColor={"#ad875e"}
         text={"yo yo ooo yoyo oy oyo yo yyo upp pp p p ppp pp p ppppp"}
         isButtonExist={true}
+        isContact={false}
         />
 
       <AboutContent
@@ -35,6 +37,7 @@ const About = () => {
         bgColor={"#41d187"}
         text={"yo yo ooo yoyo oy oyo yo yyo upp pp p pppp pp p pp"}
         isButtonExist={true}
+        isContact={false}
         />
 
       <AboutContent
@@ -44,6 +47,7 @@ const About = () => {
         bgColor={"#d1be41"}
         text={"yo yo ooo yoyo oy oyo yo yyo upp pp p p ppp pp p pp"}
         isButtonExist={true}
+        isContact={false}
       />
     </div>
   );
