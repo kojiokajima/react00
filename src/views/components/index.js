@@ -2,6 +2,7 @@ export {default as ButtonBasic} from './atoms/ButtonBasic'
 export {default as TextInput} from './atoms/TextInput'
 
 export {default as CardItem} from './molecules/CardItem'
+export {default as CardModal} from './molecules/CardModal'
 export {default as ContactForm} from './molecules/ContactForm'
 
 export {default as AboutContent} from './organisms/AboutContent'

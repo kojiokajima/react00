@@ -1,16 +1,6 @@
 import React from 'react';
 import { CardItem } from '../index';
 
-/*
-配列が渡されるんだなぁ
-中身は
-[
-    [alt, image, title]
-    [alt, image, title]
-    [alt, image, title]
-]
-みたいな感じ
- */
 
 const Cards = (props) => {
     const imageData = props.imageData
@@ -29,7 +19,9 @@ const Cards = (props) => {
                     image={pathArr[index]}
                     // image={"yooo"}
                     title={imageData[index][1]}
+                    description={imageData[index][2]}
                     key={index.toString()}
+                    // onClick={() => {console.log("yooo")}}
                 />
             })}
         </div>
