@@ -13,19 +13,23 @@ const useStyles = makeStyles({
 
 const CardItem = (props) => {
     const classes = useStyles()
+    console.log(props.image)
 
     return (
         <div className={`card ${classes.root}`}>
-            <CardMedia
-                component="img"
-                alt={props.alt}
-                height="140"
-                image={props.image}
-                title={props.title}
-            />
+            <div className="card-img">
+                <CardMedia
+                    component="img"
+                    alt={props.alt}
+                    height="140"
+                    src={props.image}
+                    // src={require('../../../assets/img/appetizer1.jpg').default}
+                    // image={'/static/media/work4.c2bdfbd0.jpg'}
+                    />
+            </div>
             <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-                Lizard
+                {props.title}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
                 Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging

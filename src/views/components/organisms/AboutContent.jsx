@@ -15,8 +15,10 @@ import { ButtonBasic } from '..';
 const AboutContent = (props) => {
     // const classes = useStyles()
     const bgUrl = props.url
-    console.log(bgUrl.default)
+    // console.log(bgUrl)
+    // console.log(bgUrl.default)
     const bgColor = props.bgColor
+    const isButtonExist = props.isButtonExist
 
     return (
         <div className="about-content">
@@ -28,7 +30,11 @@ const AboutContent = (props) => {
                 backgroundImage: "url(" + bgUrl.default + ")"
             }}>
                 <p>{props.text}</p>
-                <ButtonBasic name={"Learn More"} />
+                {isButtonExist ? (
+                    <ButtonBasic name={"Learn More"} bgColor={props.bgColor} />
+                ) : (
+                    <></>
+                )}
             </div>
 
         </div>

@@ -2,9 +2,6 @@ import React from 'react'
 import {Hero, WorkContent} from '../index'
 
 const Work = () => {
-    const images = [
-
-    ]
     return (
         <div className="work">
             {/* yoyoyo */}

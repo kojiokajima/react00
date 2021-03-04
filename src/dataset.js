@@ -1,9 +1,21 @@
+// [alt, path, title]
+// じゃなくて
+// [alt, title, description]
+// にするから
+// 
+
 const defaultDataset = {
     "drawing": [
-        ["image1", "require('../../../assets/img/work01.jpg')", "img1"],
-        ["image2", "require('../../../assets/img/work02.jpg')", "img2"],
-        ["image3", "require('../../../assets/img/work03.jpg')", "img3"],
-        ["image4", "require('../../../assets/img/work04.jpg')", "img4"]
+        ["image1", "Night Drop", "Goodね"],
+        ["image2", "N Europe Winter", "Goodね"],
+        ["image3", "img3", "Goodね"],
+        ["image4", "img4", "Goodね"],
+        ["image5", "img1", "Goodね"],
+        ["image6", "img2", "Goodね"],
+        ["image7", "img3", "Goodね"],
+        ["image8", "img4", "Goodね"],
+        ["image9", "img3", "Goodね"],
+        ["image10", "img4", "Goodね"],
     ]
 }
 

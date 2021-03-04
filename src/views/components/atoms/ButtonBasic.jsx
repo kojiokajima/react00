@@ -3,19 +3,21 @@ import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles(() => ({
-    button: {
-        color: "#d27979",
-        borderColor: "#d27979",
-
+    button: props => ({
+        color: props.bgColor,
+        borderColor: props.bgColor,
+        
         "&:hover": {
             color: "#fff",
-            backgroundColor: "#d27979",
+            backgroundColor: props.bgColor,
         }
-    }
+    })
+
 }))
 
 const ButtonBasic = (props) => {
-    const classes = useStyles()
+    const classes = useStyles(props)
+
     return (
         <Button className={classes.button} variant="outlined">
             {props.name}

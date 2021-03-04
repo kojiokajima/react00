@@ -1,0 +1,46 @@
+.contact {
+    &-content {
+        display: flex;
+        flex-direction: column;
+        
+        &-title {
+            margin: 7% auto 0 auto;
+        }
+
+        &-contacts {
+
+            & .info {
+                & .about-content {
+                    &-title {
+                        width: 30%;
+                    }
+                    
+                    &-description {
+                        position: relative;
+                        width: 70%;
+                        
+                        & p {
+                            display: flex;
+                            flex-direction: column;
+                            align-content: space-between;
+
+                            color: white;
+                            position: absolute;
+                            top: 50%;
+                            width: 90%;
+                            // left: 0;
+                            // transform: none;
+                            font-size: 1.4rem;
+                            line-height: 400%;
+                        }
+                    }
+
+                }
+
+            }
+            & .form {
+
+            }
+        }
+    }
+}

@@ -1,11 +1,13 @@
 import React from 'react'
-import { Hero } from '../index'
+import { ContactContent, Hero } from '../index'
 
 const Contact = () => {
     return (
-        <div className="Contact">
-            hohoho
-            {/* <Hero text={"This is where I am"} /> */}
+        <div className="contact">
+            {/* hohoho */}
+            <Hero text={"This is where I am"} />
+
+            <ContactContent />
 
         </div>
     )
