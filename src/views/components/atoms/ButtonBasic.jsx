@@ -19,8 +19,12 @@ const ButtonBasic = (props) => {
     const classes = useStyles(props)
 
     return (
-        <Button className={classes.button} variant="outlined">
-            {props.name}
+        <Button 
+            className={classes.button}
+            variant="outlined"
+            onClick={props.onClick}
+        >
+                {props.name}
       </Button>
     )
 }
