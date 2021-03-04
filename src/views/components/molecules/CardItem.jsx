@@ -13,7 +13,6 @@ const useStyles = makeStyles({
 
 const CardItem = (props) => {
     const classes = useStyles()
-    console.log(props.image)
 
     return (
         <div className={`card ${classes.root}`}>

@@ -7,7 +7,6 @@ jsonファイル作ろうかなぁ
 */
 
 const WorkContent = () => {
-    // console.log(defaultDataset["drawing"])
     return (
         <div className="work-content">
                 <div className="work-content-title">

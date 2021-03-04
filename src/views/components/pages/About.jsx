@@ -11,6 +11,7 @@ const About = () => {
       <Hero text={"This is who I am"} />
 
       <AboutContent
+        name={"learn more"}
         title={"Student"}
         url={require('../../../assets/img/appetizer1.jpg')}
         bgColor={"#415ed1"}
@@ -19,6 +20,7 @@ const About = () => {
         />
 
       <AboutContent
+        name={"learn more"}
         title={"Web Developer"}
         url={require('../../../assets/img/appetizer1.jpg')}
         bgColor={"#ad875e"}
@@ -27,6 +29,7 @@ const About = () => {
         />
 
       <AboutContent
+        name={"See what i created"}
         title={"Painter"}
         url={require('../../../assets/img/appetizer1.jpg')}
         bgColor={"#41d187"}
@@ -35,6 +38,7 @@ const About = () => {
         />
 
       <AboutContent
+        name={"learn more"}
         title={"Traveler"}
         url={require('../../../assets/img/appetizer1.jpg')}
         bgColor={"#d1be41"}
