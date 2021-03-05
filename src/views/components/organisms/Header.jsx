@@ -10,11 +10,6 @@ import {About, Contact, History, Home, Work} from '../index'
 
 const Header = () => {
     return (
-        <BrowserRouter>
-            {/* <motion.div
-                animate={{ rotate: 90 }}
-                transition={{ ease: "easeOut", duration: 2 }}
-            > */}
                 <header className="header">
                     <div className="header-logo">
                         {/* <ListItemAvatar>
@@ -33,16 +28,6 @@ const Header = () => {
                         </ul>
                     </div>
                 </header>
-            {/* </motion.div> */}
-
-            <Switch>
-                <Route exact path={'/about'} component={About} />
-                <Route exact path={'/contact'} component={Contact} />
-                {/* <Route exact path={'/history'} component={History} /> */}
-                <Route exact path={'/'} component={Home} />
-                <Route exact path={'/work'} component={Work} />
-            </Switch>
-        </BrowserRouter>
         
     )
 }
