@@ -17,20 +17,15 @@
                 justify-content: space-evenly;
 
                 & .card {
-                    // display: flex;
-                    // flex-direction: column;
-                    // align-content: center;
-                    // align-items: center;
-                    // justify-content: center;
-                    // justify-items: center;
-
-
                     position: relative;
                     width: 20%;
                     margin: 5% 5%;
                     text-align: center;
-                    // object-fit: cover;
-                    // object-position: center;
+                    transition: all 0.2s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
 
                     &-img {
                         position: relative;

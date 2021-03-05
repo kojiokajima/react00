@@ -5,7 +5,6 @@ import { ButtonBasic, ContactForm } from '..';
 const AboutContent = (props) => {
     const bgUrl = props.url
     const bgColor = props.bgColor
-    const isButtonExist = props.isButtonExist
     const isUrl = /^https:*/.test(props.link)
 
     const [open, setOpen] = useState(false)
@@ -30,7 +29,7 @@ const AboutContent = (props) => {
                 <p>{props.text}</p>
 
                 {isUrl ? (
-                    <a href={props.link} target="_blank">
+                    <a href={props.link} target="_blank" rel="noreferrer">
                         <ButtonBasic
                             name={props.name}
                             bgColor={props.bgColor}

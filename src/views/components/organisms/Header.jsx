@@ -14,12 +14,12 @@ const Header = () => {
                         {/* <ListItemAvatar>
                             <Avatar alt="Koji Okajima" src={Logo} />
                         </ListItemAvatar> */}
-                        <Link to='/'><img src={Logo} alt="Koji Okajima"/></Link>
+                        <Link to='/home'><img src={Logo} alt="Koji Okajima"/></Link>
                     </div>
 
                     <div className="header-nav">
                         <ul>
-                            <li><Link to='/'>Home</Link></li>
+                            <li><Link to='/home'>Home</Link></li>
                             <li><Link to='/about'>About</Link></li>
                             {/* <li><Link to='/history'>History</Link></li> */}
                             <li><Link to='/work'>Work</Link></li>

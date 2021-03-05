@@ -7,7 +7,6 @@ const Hero = (props) => {
       <div className="hero-bg"></div>
       <div className="hero-text">
         <Grow in={true} style={{ transformOrigin: "50% 50%" }} timeout={1500}>
-          {/* <p>This is who I am</p> */}
           <p>{props.text}</p>
         </Grow>
         <Grow in={true} style={{ transformOrigin: "50% 50%" }} timeout={3500}>

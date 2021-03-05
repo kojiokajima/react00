@@ -42,7 +42,7 @@ const About = () => {
 
       <AboutContent
         name={"learn more"}
-        link={'https://cypressmountain.com/'}
+        link={'/'}
         title={"Traveler"}
         url={require('../../../assets/img/appetizer1.jpg')}
         bgColor={"#d1be41"}
