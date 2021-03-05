@@ -27,7 +27,7 @@ const Header = () => {
                         <ul>
                             <li><Link to='/'>Home</Link></li>
                             <li><Link to='/about'>About</Link></li>
-                            <li><Link to='/history'>History</Link></li>
+                            {/* <li><Link to='/history'>History</Link></li> */}
                             <li><Link to='/work'>Work</Link></li>
                             <li><Link to='/contact'>Contact</Link></li>
                         </ul>
@@ -38,7 +38,7 @@ const Header = () => {
             <Switch>
                 <Route exact path={'/about'} component={About} />
                 <Route exact path={'/contact'} component={Contact} />
-                <Route exact path={'/history'} component={History} />
+                {/* <Route exact path={'/history'} component={History} /> */}
                 <Route exact path={'/'} component={Home} />
                 <Route exact path={'/work'} component={Work} />
             </Switch>

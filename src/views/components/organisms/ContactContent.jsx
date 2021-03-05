@@ -1,5 +1,5 @@
 import React from 'react'
-import { AboutContent, ContactForm } from '../index'
+import { AboutContent } from '../index'
 import PersonIcon from '@material-ui/icons/Person';
 import { makeStyles } from '@material-ui/core';
 
@@ -17,12 +17,11 @@ const ContactContent = () => {
     const classes = useStyles()
     const infoText = `Name: Koji Okajima<br/>Email: okka01240110@gmail.com<br/>Phone: 236-677-2088`;
     const renderedText = () => {
-        const text1 = infoText.split("<br/>")
-
         return infoText.split("<br/>").map((item, index) => {
             return <span key={index}>{item}<br/></span>
         })
     }
+    
 
     return (
         <div className="contact-content">
@@ -33,13 +32,15 @@ const ContactContent = () => {
             <div className="contact-content-contacts">
                 <div className="info">
                     <AboutContent
-                        // className={classes.AboutContent}
+                        name={"Send Message"}
                         title={<PersonIcon className={classes.aboutContentIcon}/>}
                         url={require('../../../assets/img/appetizer1.jpg')}
                         bgColor={"#a4abbf"}
                         text={renderedText()}
                         // text={infoText}
                         isButtonExist={true}
+                        isContact={true}
+
                     />
                     
                                         

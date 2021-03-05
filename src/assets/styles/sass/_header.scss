@@ -1,10 +1,13 @@
 .header {
+    position: fixed;
     width: 100%;
-    height: 80px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #666;
+    background-color: azure;
+    z-index: 2;
 
     &-logo {
         width: 8%;

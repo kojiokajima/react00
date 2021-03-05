@@ -15,7 +15,7 @@ const defaultDataset = {
         ["image7", "img3", "Goodね"],
         ["image8", "img4", "Goodね"],
         ["image9", "img3", "Goodね"],
-        ["image10", "img4", "Goodね"],
+        ["image10", "img4"],
     ]
 }
 
