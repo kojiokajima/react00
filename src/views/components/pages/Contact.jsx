@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <div className="contact">
             {/* hohoho */}
-            <Hero text={"This is where I am"} />
+            <Hero text={"This is where I am"} bottom={"I'm always happy to hear from you"} />
 
             <ContactContent />
 

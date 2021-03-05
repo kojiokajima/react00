@@ -4,7 +4,7 @@ import { Hero } from '../index'
 const History = () => {
     return (
         <div className="history">
-            <Hero text={"This is who I was"} />
+            <Hero text={"This is who I was"} bottom={"History...?"} />
 
         </div>
     )

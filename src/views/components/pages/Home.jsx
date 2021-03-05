@@ -13,9 +13,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <Hero
-        text={renderedText()}
-      />
+      <Hero text={renderedText()} bottom={"Explore now"} />
           {/* <Grow in={true} style={{ transformOrigin: "0 0 0" }} timeout={1500}>
               <p>
                 Hello World

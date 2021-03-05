@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
@@ -42,9 +42,7 @@ const useStyles = makeStyles((theme) => ({
 const CardModal = (props) => {
   const classes = useStyles();
   const open = props.open;
-  const handleOpen = props.handleOpen;
   const handleClose = props.handleClose;
-  console.log(open);
   //   const [open, setOpen] = useState(props.open);
 
   //   const handleOpen = () => {

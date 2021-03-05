@@ -34,11 +34,10 @@ const ContactContent = () => {
                     <AboutContent
                         name={"Send Message"}
                         title={<PersonIcon className={classes.aboutContentIcon}/>}
+                        link={""}
                         url={require('../../../assets/img/appetizer1.jpg')}
                         bgColor={"#a4abbf"}
                         text={renderedText()}
-                        // text={infoText}
-                        isButtonExist={true}
                         isContact={true}
 
                     />

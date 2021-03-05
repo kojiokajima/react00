@@ -5,7 +5,7 @@ const Work = () => {
     return (
         <div className="work">
             {/* yoyoyo */}
-            <Hero text={"This is what I created"} />
+            <Hero text={"This is what I created"} bottom={"Explore my creativity"} />
 
             <WorkContent />
 

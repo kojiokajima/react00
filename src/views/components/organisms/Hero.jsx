@@ -11,7 +11,7 @@ const Hero = (props) => {
           <p>{props.text}</p>
         </Grow>
         <Grow in={true} style={{ transformOrigin: "50% 50%" }} timeout={3500}>
-          <p>Scroll to learn more</p>
+          <p>{props.bottom}</p>
         </Grow>
       </div>
     </div>

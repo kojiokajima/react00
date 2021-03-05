@@ -1,10 +1,9 @@
 import React from 'react';
-import { Switch, Route, BrowserRouter, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import Avatar from '@material-ui/core/Avatar';
 // import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 // import { makeStyles } from '@material-ui/core/styles'
 import Logo from '../../../assets/img/logo_square.png'
-import {About, Contact, History, Home, Work} from '../index'
 
 
 
