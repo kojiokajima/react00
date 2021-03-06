@@ -18,7 +18,7 @@ const About = () => {
         url={require('../../../assets/img/about_student.png')}
         // bgColor={"#415ed1"}
         bgColor={"#74d2e4"}
-        text={"Strong passion to learn something new always make"}
+        text={"Strong passion to learn something new always make me excited. I'll keep learning and putting what I've learned into practice."}
         isContact={false}
         />
 
@@ -28,7 +28,7 @@ const About = () => {
         title={"Web Developer"}
         url={require('../../../assets/img/appetizer1.jpg')}
         bgColor={"#ad875e"}
-        text={"yo yo ooo yoyo oy oyo yo yyo upp pp p p ppp pp p ppppp"}
+        text={"From design to coding, I am always happy to put my passion into products. If you  want to work with me, click the link below to get in touch!"}
         isContact={false}
         />
 
@@ -38,7 +38,7 @@ const About = () => {
         title={"Painter"}
         url={require('../../../assets/img/about_painter.png')}
         bgColor={"#41d187"}
-        text={"yo yo ooo yoyo oy oyo yo yyo upp pp p pppp pp p pp"}
+        text={"Painting is designing. Designing helps web development. I am pretty sure painting helps me keep myself creativite."}
         isContact={false}
         />
 
@@ -48,7 +48,7 @@ const About = () => {
         title={"Traveler"}
         url={require('../../../assets/img/about_traveler.jpg')}
         bgColor={"#d1be41"}
-        text={"yo yo ooo yoyo oy oyo yo yyo upp pp p p ppp pp p pp"}
+        text={"Visiting where I have never been always inspires me. Food, smell, and people that I never experienced or met give me hints for products."}
         isContact={false}
       />
     </div>
