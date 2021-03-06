@@ -1,10 +1,11 @@
 import React, { useCallback, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { ButtonBasic, ContactForm } from '..';
 
 const AboutContent = (props) => {
     const bgUrl = props.url
     const bgColor = props.bgColor
-    const isButtonExist = props.isButtonExist
+    const isUrl = /^https:*/.test(props.link)
 
     const [open, setOpen] = useState(false)
 
@@ -26,16 +27,35 @@ const AboutContent = (props) => {
                 backgroundImage: "url(" + bgUrl.default + ")"
             }}>
                 <p>{props.text}</p>
-                
-                {isButtonExist ? (
-                    <ButtonBasic
-                        name={props.name}
-                        bgColor={props.bgColor}
-                        onClick={handleOpen}
-                    />
-                ) : (
-                    <></>
-                )}
+
+                {isUrl ? (
+                    <a href={props.link} target="_blank" rel="noreferrer">
+                        <ButtonBasic
+                            name={props.name}
+                            bgColor={props.bgColor}
+                            onClick={handleOpen}
+                        />
+                    </a>
+                 ) : (
+                     props.isContact ? (
+                             <ButtonBasic
+                                 name={props.name}
+                                 bgColor={props.bgColor}
+                                 onClick={handleOpen}
+                             />
+                      ) : (
+                          <Link
+                              to={`${props.link}`}
+                          >
+                              <ButtonBasic
+                                  name={props.name}
+                                  bgColor={props.bgColor}
+                                  onClick={handleOpen}
+                              />
+                          </Link>
+
+                      )
+                 )}
             </div>
 
             {props.isContact ? (

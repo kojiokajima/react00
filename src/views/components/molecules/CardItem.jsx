@@ -22,7 +22,6 @@ const CardItem = (props) => {
 
   const handleClose = () => {
     setOpen(false);
-    console.log("onClose now")
     // console.log("handleClose from Item", open);
   };
 

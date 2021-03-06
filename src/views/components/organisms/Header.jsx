@@ -1,20 +1,14 @@
 import React from 'react';
-import { Switch, Route, BrowserRouter, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import Avatar from '@material-ui/core/Avatar';
 // import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 // import { makeStyles } from '@material-ui/core/styles'
-import Logo from '../../../assets/img/logo_square.png'
-import {About, Contact, History, Home, Work} from '../index'
+import Logo from '../../../assets/img/logo.png'
 
 
 
 const Header = () => {
     return (
-        <BrowserRouter>
-            {/* <motion.div
-                animate={{ rotate: 90 }}
-                transition={{ ease: "easeOut", duration: 2 }}
-            > */}
                 <header className="header">
                     <div className="header-logo">
                         {/* <ListItemAvatar>
@@ -33,16 +27,6 @@ const Header = () => {
                         </ul>
                     </div>
                 </header>
-            {/* </motion.div> */}
-
-            <Switch>
-                <Route exact path={'/about'} component={About} />
-                <Route exact path={'/contact'} component={Contact} />
-                {/* <Route exact path={'/history'} component={History} /> */}
-                <Route exact path={'/'} component={Home} />
-                <Route exact path={'/work'} component={Work} />
-            </Switch>
-        </BrowserRouter>
         
     )
 }
